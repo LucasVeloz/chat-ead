@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import { Container } from './styles';
 
@@ -8,19 +8,19 @@ export const Header = () => {
       <nav>
           <ul>
             <li>
-              <Link  to="/">
+              <NavLink  to="/" style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal'})}>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">
+              <NavLink to="/about" style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal'})}>
                 Sobre
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/regulation">
+              <NavLink to="/regulation" style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal'})}>
                 Regulation
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>

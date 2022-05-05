@@ -16,9 +16,13 @@ export const Container = styled.header`
   li {
     cursor: pointer;
     list-style: none;
-    color: white;
     :not(:last-child) {
       margin-right: 20px;
     }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
   }
 `;
