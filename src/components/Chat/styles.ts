@@ -66,7 +66,7 @@ export const UserMessages = styled(BaseMessagesContainer)`
   align-self: flex-end;
 `;
 
-export const Message = styled.span`
+export const Message = styled.p`
 `;
 
 

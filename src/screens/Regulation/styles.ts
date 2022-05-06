@@ -6,29 +6,6 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const Header = styled.header`
-  padding: 20px;
-  background: #ff0066;
-
-  display: flex;
-  justify-content: flex-end;
-
-  nav {
-
-  }
-  ul {
-    display: flex;
-  }
-  li {
-    cursor: pointer;
-    list-style: none;
-    color: white;
-    :not(:last-child) {
-      margin-right: 20px;
-    }
-  }
-`;
-
 export const Main = styled.main`
   section {
     padding: 50px;

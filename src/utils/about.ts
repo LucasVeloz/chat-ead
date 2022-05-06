@@ -13,6 +13,7 @@ const results = [
     Segundo o art. 8º da resolução nº 1, de 11 de março de 2016: "Os profissionais da educação, que atuarem na EaD, devem ter formação condizente com a legislação em vigor e preparação específica para atuar nessa modalidade educacional."
     `,
     image: require('../assets/images/caraclicandonatela.png'),
+    links: ['https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/21393466/do1-2016-03-14-resolucao-n-1-de-11-de-marco-de-2016-21393306']
   },
   {
     title: "Quais as características do aluno EAD?",
@@ -25,10 +26,10 @@ const results = [
     image: require('../assets/images/bichinhoclicandonocomputador.png'),
   },
   {
-    title: "Qual é o objetivo da EAD?",
-    received: /Qual objetivo da ead/i,
-    description: `O principal objetivo da EaD é oferecer um ensino de qualidade, dinâmico, completo e eficiente através de meios tecnológicos como a internet, vídeo aulas, entre outros. O professor e o aluno não se comunicam pessoalmente, mas mantém um contato constante e eficiente, que faz o ensino ser completo e eficaz. a plataforma Moodle, por exemplo, que serve como uma sala de aula virtual, oferece um ensino completamente inovador utilizando desse ambiente virtual de aprendizagem, que não é focado na tradição e no regime presencial.`,
-    image: require('../assets/images/meninafeliz.png'),
+    title: "Existe diferença entre o diploma EAD e o diploma presencial?",
+    received: /Existe diferença entre o diploma EAD e o diploma presencial/i,
+    description: `Não existe qualquer diferença entre diplomas EAD e presenciais. Ambos têm exatamente a mesma validade de acordo com o MEC.`,
+    image: require('../assets/images/diploma.png'),
   },
 ]
 

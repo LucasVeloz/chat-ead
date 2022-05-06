@@ -6,35 +6,6 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const Header = styled.header`
-  padding: 20px;
-  background: #ff0066;
-
-  display: flex;
-  justify-content: flex-end;
-
-  nav {
-
-  }
-  ul {
-    display: flex;
-  }
-  li {
-    cursor: pointer;
-    list-style: none;
-    :not(:last-child) {
-      margin-right: 20px;
-    }
-  } 
-  a {
-    color: white;
-    text-decoration: none;
-    :visited {
-      color: white;
-    }
-  }
-`;
-
 export const Main = styled.main`
   section {
     padding: 50px;

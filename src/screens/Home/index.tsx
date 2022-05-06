@@ -14,6 +14,16 @@ export const Home = () => {
             <div>
               <h1>{item.title}</h1>
               <p>{item.description}</p>
+              {item.links?.length && item.links.map(element => (
+                <a 
+                  href={element} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ maxWidth: 500 }}
+                >
+                  {element}
+                </a>
+              ))}
             </div>
             {index % 2 === 0 &&
               <img src={item.image} alt="demonstrative" />

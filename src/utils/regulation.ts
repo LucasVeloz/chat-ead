@@ -24,7 +24,7 @@ const credenciamento = [
     Isso traz legalidade e reconhecimento à modalidade, embora também signifique a não existência de uma Lei de cursos livres específica. Dessa forma, eles não dependem de nenhuma autorização, prévia ou posterior, para o seu funcionamento.
     `,
     image: require('../assets/images/educacaobasica.png'),
-
+    links: ['http://www.planalto.gov.br/ccivil_03/leis/l9394.htm', 'http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9057.htm']
   },
   {
     title: 'Como é o credenciamento da EAD?',
@@ -45,6 +45,7 @@ const credenciamento = [
     ordem serão objeto de diligências, sindicância, e, se for o caso, de processo administrativo que vise a apurá-los, sustentando-se, de imediato, a tramitação de pleitos de interesse da instituição, podendo ainda acarretar-lhe o descredenciamento."
     `,
     image: require('../assets/images/credenciamento.png'),
+    links: ['http://www.planalto.gov.br/ccivil_03/decreto/d2494.htm']
   }
 ]
 

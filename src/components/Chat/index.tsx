@@ -1,7 +1,7 @@
 import { Children, useEffect, useRef, useState } from 'react';
 import { FaRobot } from 'react-icons/fa'
 import { AiFillCloseCircle } from 'react-icons/ai'
-import { handleMessage, initialUserMessage } from './botMessages';
+import { handleLinks, handleMessage, initialUserMessage } from './botMessages';
 
 import { ChatContainer, Container, Message, RobotMessages, UserMessages } from './styles';
 
@@ -9,6 +9,7 @@ import { ChatContainer, Container, Message, RobotMessages, UserMessages } from '
 interface ItensProps {
   isRobot: boolean;
   message: string;
+  links?: string[];
 }
 
 interface Props {
@@ -25,6 +26,16 @@ const Messages = ({ messages }: {messages: ItensProps[]}) => {
           return (
             <RobotMessages>
               <Message>{item.message}</Message>
+              {!!item.links?.length && item.links.map((element, index) => (
+                <a
+                  href={element}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ maxWidth: 50, width: 50, display: 'block' }}
+                >
+                -link {index + 1}
+                </a>
+              ))}
             </RobotMessages>
           )
         }
@@ -47,6 +58,8 @@ export const Chat = ({ close }: Props) => {
   const sendUserMessage = () => {
     if (!input) return;
     const response = handleMessage(input);
+    const links = handleLinks(input);
+    console.log(links)
     const newMessages: ItensProps[] = [
       {
         isRobot: false,
@@ -54,11 +67,13 @@ export const Chat = ({ close }: Props) => {
       }
     ]
     if (!response) newMessages.push({isRobot: true, message: 'não entendi o que quis dizer'})
-    if (response) newMessages.push({isRobot: true, message: response})
-    setMessages(oldState => [
-      ...oldState,
-      ...newMessages
-    ]);
+    if (response) {
+      newMessages.push({isRobot: true, message: response, links })
+    }
+      setMessages(oldState => [
+        ...oldState,
+        ...newMessages
+      ]);
     setInput('');
     ref.current?.scrollIntoView({ behavior: 'smooth', block: 'end',  inline: 'nearest'})
   }

@@ -5,6 +5,7 @@ import { Container } from './styles';
 export const Header = () => {
   return (
     <Container>
+      <h1>Me Ajuda EAD</h1>
       <nav>
           <ul>
             <li>
@@ -19,7 +20,7 @@ export const Header = () => {
             </li>
             <li>
               <NavLink to="/regulation" style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal'})}>
-                Regulation
+                Regulamentação
               </NavLink>
             </li>
           </ul>

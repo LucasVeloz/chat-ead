@@ -5,7 +5,12 @@ export const Container = styled.header`
   background: #ff0066;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    color: white;
+  }
 
   nav {
 
