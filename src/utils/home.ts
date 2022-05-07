@@ -1,7 +1,7 @@
 const results = [
   {
-    title: "Qual significado da sigla EAD?",
-    received: /qual o significado da sigla ead?/i,
+    title: "Qual é o significado da sigla EAD?",
+    received: /qual [eé] o significado da sigla ead?/i,
     description: `A sigla EAD significa Educação a Distância. Essa modalidade permite com que as aulas sejam realizadas a distância de forma remota.`,
     image: 'https://blog.sesisenai.org.br/wp-content/uploads/2021/02/o-que-e-curso-ead-e-como-funciona.jpg',
   },
@@ -16,7 +16,7 @@ const results = [
   },
   {
     title: "Qual é o objetivo da EAD?",
-    received: /Qual objetivo da ead/i,
+    received: /Qual [eé] o objetivo da ead/i,
     description: `O principal objetivo da EaD é oferecer um ensino de qualidade, dinâmico, completo e eficiente através de meios tecnológicos como a internet, vídeo aulas, entre outros. O professor e o aluno não se comunicam pessoalmente, mas mantém um contato constante e eficiente, que faz o ensino ser completo e eficaz. a plataforma Moodle, por exemplo, que serve como uma sala de aula virtual, oferece um ensino completamente inovador utilizando desse ambiente virtual de aprendizagem, que não é focado na tradição e no regime presencial.`,
     image: require('../assets/images/meninafeliz.png'),
   },

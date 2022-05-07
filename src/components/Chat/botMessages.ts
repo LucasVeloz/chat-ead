@@ -32,7 +32,7 @@ const messages: Props[]  = [
     `,
   },
   {
-    received: /como [eé] feit[ao] a cola[çã|ca]o de grau para os alun[oa]s da EAD?/i,
+    received: /como [eé] feit[ao] a cola[çc][aã]o de grau para os alun[oa]s da EAD?/i,
     description: 'As universidades EAD proporcionam uma cerimônia de formatura opcional para os alunos que quiserem participar. A organização da formatura é realizada pelo polo onde o aluno se inscreveu para o curso, de preferência com localização mais próxima de sua moradia.',
   },
   {
@@ -40,7 +40,7 @@ const messages: Props[]  = [
     description: 'Para aulas de laboratório a EAD proporciona os polos de educação a distância que podem servir para o atendimento presencial para aulas de laboratório, onde os alunos são acompanhados de um tutor.',
   },
   {
-    received: /como [eé] [o|feito|o] acesso [aáà] biblioteca a dist[âa]ncia?/i,
+    received: /como [eé] [o|feito|o] acesso [aáà] biblioteca na ead?/i,
     description: 'O aluno da EAD tem acesso a bibliotecas digitais, como a minha biblioteca digital, ou BCEDigital, que possibilita que os estudantes tenham acesso aos livros digitalmente utilizando as credenciais disponibilizadas por sua instituição de ensino.',
   },
   {
@@ -58,17 +58,17 @@ const messages: Props[]  = [
     `,
   },
   {
-    received: /Qual diferença entre EAD e ensino remoto?/i,
+    received: /Qual [eé] a diferença entre EAD e ensino remoto?/i,
     description: `Em geral, o ensino remoto é utilizado em um curto período de tempo, diferentemente da EAD, que tem sua estrutura e metodologia pensados para garantir o ensino e a educação a distância. As aulas e atividades remotas são aplicadas pontualmente, nas quais acompanhamos o ensino presencial aplicado em plataformas digitais. Já a EAD foi desenhada para prestar atendimento, aplicar atividades, aulas e outras demandas em um ambiente de aprendizado, com apoio de tutores e recursos tecnológicos que favorecem o ensino.
     `,
   },
   {
-    received: /Qual papel d[oa] tutor[a] na EAD?/i,
+    received: /Qual papel d[oa] tutor na EAD?/i,
     description: `Segundo(https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/21393466/do1-2016-03-14-resolucao-n-1-de-11-de-marco-de-2016-21393306) o § 2º do art. 8º da RESOLUÇÃO Nº 1, DE 11 DE MARÇO DE 2016: “Entende-se por tutor da instituição, na modalidade EaD,todo profissional de nível superior, a ela vinculado, que atue na área de conhecimento de sua formação, como suporte às atividades dos docentes e mediação pedagógica, junto a estudantes, na modalidade de EaD.”
     `,
   },
   {
-    received: /Qual papel d[oa] professor[a] na EAD?/i,
+    received: /Qual papel d[oa] professor na EAD?/i,
     description: `É importante que o professor de cursos a distância tenha familiaridade com o uso dos recursos mais modernos(http://portal.mec.gov.br/component/tags/tag/ensino-a-distancia). Embora a tecnologia não deva ser o centro do processo, é importante ressaltar que as relações na educação a distância são mediadas por instrumentos que vão do material impresso aos mais sofisticados dispositivos. Pode-se contar com todo o aparato tecnológico do tempo presente: os ambientes virtuais de aprendizagem e as ferramentas de comunicação viabilizadas pela interface web.
     `,
   },
